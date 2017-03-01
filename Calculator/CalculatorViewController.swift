@@ -18,6 +18,7 @@ class CalculatorViewController: UIViewController {
     private var brain = CalculatorBrain()
     private var scndSavedProgram: CalculatorBrain.PropertyList?
     var savedProgram: CalculatorBrain.PropertyList?
+    private var forHistory = [String]()
     
     @IBAction private func digitTapped(_ sender: UIButton) {
         let digit = sender.currentTitle!
